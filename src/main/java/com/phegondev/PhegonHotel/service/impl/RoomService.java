@@ -35,7 +35,7 @@ public class RoomService implements IRoomService {
 */
 
     @Override
-    public Response addNewRoom(MultipartFile photo, String roomType, BigDecimal roomPrice, String description) {
+    public Response addNewRoom(/*MultipartFile photo,*/ String roomType, BigDecimal roomPrice, String description) {
         Response response = new Response();
 
         try {
