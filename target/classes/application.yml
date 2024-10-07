@@ -1,0 +1,38 @@
+# Nombre de la aplicación
+spring:
+  application:
+    name: PhegonHotel
+
+  # Configuración de la base de datos MySQL
+  datasource:
+    url: jdbc:mysql://localhost:3306/phegon_hotel_db
+    username: root
+    password: qwerqwer
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # Configuración de JPA
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+
+# Configuración del servidor
+server:
+  port: 4040
+
+# Configuración de logging
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+        web: DEBUG
+    com:
+      phegondev:
+        PhegonHotel: DEBUG
+
+# Nota: La configuración de logging se ha mantenido en el formato YAML,
+# pero ten en cuenta que algunas versiones de Spring Boot pueden requerir
+# ajustes adicionales para el logging en YAML.
